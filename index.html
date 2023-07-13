@@ -7,15 +7,20 @@
 </head>
 <body>
     <!--图片层-->
-    <div id='NewPanel' style="display:none">
+    <div id='NewPanel' style="display:none" onclick="New2()">
         <img src="./img/ceshiimg.jpg" />
     </div>
     <!--打开图片-->
     <script type="text/javascript">
-        function New() {
+        function New1() {
             document.getElementById('NewPanel').style.display = 'block';
+            document.getElementById('btndianwo').style.display = 'none';
+        }
+        function New2() {
+            document.getElementById('NewPanel').style.display = 'none';
+            document.getElementById('btndianwo').style.display = 'block';
         }
     </script>
-    <button onclick="New()">点我</button>
+    <button id="btndianwo" onclick="New1()" style="width: 100px;height: 100px;">点我</button>
 </body>
 </html>
