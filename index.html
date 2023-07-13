@@ -1,9 +1,21 @@
-<html>
-  <head>
-    <body>
-      <h1>hello!!!</</h1>
-      <h1>hello!!!</</h1>
-      <h1>hello!!!</</h1>
-    </body>
-  </head>
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>我的测试页</title>
+</head>
+<body>
+    <!--图片层-->
+    <div id='NewPanel' style="display:none">
+        <img src="./img/ceshiimg.jpg" />
+    </div>
+    <!--打开图片-->
+    <script type="text/javascript">
+        function New() {
+            document.getElementById('NewPanel').style.display = 'block';
+        }
+    </script>
+    <button onclick="New()">点我</button>
+</body>
 </html>
